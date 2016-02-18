@@ -24,3 +24,10 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := trltetmo
 PRODUCT_NAME := cm_trltetmo
+PRODUCT_BRAND := samsung
+PRODUCT_MODEL := SM-N910T
+PRODUCT_MANUFACTURER := samsung
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trltetmo TARGET_DEVICE=trltetmo BUILD_FINGERPRINT="samsung/trltetmo/trltetmo:5.1.1/LMY47X/N910TUVU2DOK2:user/release-keys" PRIVATE_BUILD_DESC="trltetmo-user 5.1.1 LMY47X N910TUVU2DOK2 release-keys"
+
