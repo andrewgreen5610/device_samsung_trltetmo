@@ -14,20 +14,22 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/trltetmo/full_trltetmo.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/deso/config/common_full_phone.mk)
+$(call inherit-product, vendor/deso/config/common.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/deso/config/nfc_enhanced.mk)
 
-# Inherit common CM phone.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/trltetmo/full_trltetmo.mk)
 
+## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := trltetmo
-PRODUCT_NAME := cm_trltetmo
+PRODUCT_NAME := deso_trltetmo
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N910T
 PRODUCT_MANUFACTURER := samsung
 
-# Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trltetmo TARGET_DEVICE=trltetmo BUILD_FINGERPRINT="samsung/trltetmo/trltetmo:6.0.1/MMB29K/N910TUVU2DOK2:user/release-keys" PRIVATE_BUILD_DESC="trltetmo-user 6.0.1 MMB29K N910TUVU2DOK2 release-keys"
-
+TARGET_GCC_VERSION_ARM := 5.4-gnu
+TARGET_GCC_VERSION_EXP := 5.3-uber
