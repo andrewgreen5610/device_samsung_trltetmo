@@ -7,14 +7,8 @@
   },
   {
     "remote":      "github",
-    "repository":  "CyanogenMod/android_external_stlport",
-    "target_path": "external/stlport",
-    "branch":      "cm-14.0"
-  },
-  {
-    "remote":      "github",
-    "repository":  "CyanogenMod/android_external_connectivity",
-    "target_path": "external/connectivity",
+    "repository":  "CyanogenMod/android_device_qcom_sepolicy",
+    "target_path": "device/qcom/sepolicy",
     "branch":      "cm-13.0"
   },
   {
